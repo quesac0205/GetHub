@@ -1,0 +1,107 @@
+Designer: Sachin Bansal
+Project Name: GetHub - a version tracking system written in C++
+
+###Introduction::
+Designed and implemented a C++ memory-managed version tracking system simulating GitHub with dynamic Repo/File management and deep-copy Client functionality. The system supports adding, viewing, and removing repositories and their files on the heap. Implemented object-oriented design principles with proper destructors, deep copy logic, and modular class structure. A UML diagram was created to visualize the architecture.
+
+
+###Folder Structure:: 
+/media/sf_Shared_Folder/ # ls -l
+total 154
+-rwxrwx--- 1 root vboxsf  1003 Oct  4 07:49 class.py
+-rwxrwx--- 1 root vboxsf  1321 Nov  3 18:52 Client.cc
+-rwxrwx--- 1 root vboxsf   532 Nov  3 18:52 Client.h
+-rwxrwx--- 1 root vboxsf 12523 Nov  3 15:06 Control.cc
+-rwxrwx--- 1 root vboxsf   913 Nov  3 13:32 Control.h
+-rwxrwx--- 1 root vboxsf  1891 Oct 12 23:56 Date.cc
+-rwxrwx--- 1 root vboxsf   705 Oct 12 18:54 Date.h
+-rwxrwx--- 1 root vboxsf    85 Sep 19 08:16 defs.h
+-rwxrwx--- 1 root vboxsf  1292 Nov  3 18:59 File.cc
+-rwxrwx--- 1 root vboxsf   579 Nov  3 18:59 File.h
+-rwxrwx--- 1 root vboxsf  4544 Nov  3 18:49 FileList.cc
+-rwxrwx--- 1 root vboxsf   965 Nov  3 11:32 FileList.h
+-rwxrwx--- 1 root vboxsf  2330 Nov  3 18:55 GetHub.cc
+-rwxrwx--- 1 root vboxsf   951 Nov  3 18:55 GetHub.h
+-rwxrwx--- 1 root vboxsf   185 Sep 18 13:37 main.cc
+-rwxrwx--- 1 root vboxsf  1082 Oct  4 11:10 Makefile
+-rwxrwx--- 1 root vboxsf  2357 Nov  3 16:01 Repo.cc
+-rwxrwx--- 1 root vboxsf   763 Nov  3 14:18 Repo.h
+-rwxrwx--- 1 root vboxsf  3395 Nov  3 14:15 RepoList.cc
+-rwxrwx--- 1 root vboxsf   968 Nov  3 11:37 RepoList.h
+-rwxrwx--- 1 root vboxsf   213 Sep 18 13:37 test.cc
+-rwxrwx--- 1 root vboxsf 24123 Oct  1 14:10 TestControl.cc
+-rwxrwx--- 1 root vboxsf   799 Sep 30 13:43 TestControl.h
+-rwxrwx--- 1 root vboxsf  5061 Sep 18 13:37 Tester.cc
+-rwxrwx--- 1 root vboxsf  1498 Sep 18 13:37 Tester.h
+-rwxrwx--- 1 root vboxsf   698 Sep 18 13:37 View.cc
+-rwxrwx--- 1 root vboxsf   230 Sep 18 13:37 View.h
+
+
+###Instructions to run the "make" and form an executable::
+
+1. Please use Linux command "make" to create an a3 and a3test executables.
+2. use make clean to clean up any related object files
+
+### Below shows how "make" command can be executed
+student @ COMP2401 : 19:04:05
+# make
+g++ -c Repo.cc
+g++ -c RepoList.cc
+g++ -c GetHub.cc
+g++ -c Control.cc
+g++ -c main.cc 
+g++ -c View.cc
+g++ -c File.cc
+g++ -c FileList.cc
+g++ -c Date.cc
+g++ -c Client.cc
+g++ -o a3 main.o View.o Control.o GetHub.o Repo.o File.o RepoList.o FileList.o Date.o Client.o
+g++ -c TestControl.cc
+g++ -c test.cc
+g++ -c Tester.cc
+g++ -o a3test test.o View.o TestControl.o Tester.o GetHub.o Repo.o File.o RepoList.o FileList.o Date.o Client.o
+
+
+###Run "make clean" to clean all the binaries and clean the build environment
+student @ COMP2401 : 19:04:07
+ # make clean
+
+
+### Important things to remember::
+1. Remember the instructions above are for Linux systems, every system needs to generate their own executable as it varies based on what kind of compiler is used to form the executable.
+2. In this GitHub repo only README file, UML file and GitHub Class .c and .h files are made public and the rest of code is kept private.
+
+
+### Following shows a3 and a3test files execution
+student @ COMP2401 : 19:07:10
+ # ./a3
+Initializing GetHub...
+
+Please make a selection:
+
+  (1) Print all repos
+  (2) Print repo
+  (3) Print file
+  (4) Remove repo
+  (5) Remove file
+
+ Client functions
+  (6) Download repo
+  (7) Print client repo
+  (8) Print file content
+  (0) Exit
+
+Enter your selection: 
+
+student @ COMP2401 : 19:07:49
+# ./a3test
+Please make a selection:
+
+  (1) RepoList test
+  (2) GetHub repo test
+  (3) GetHub file test
+//snip//
+
+  (0) Exit
+
+Enter your selection: 
