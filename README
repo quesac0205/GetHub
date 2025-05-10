@@ -2,7 +2,8 @@ Designer: Sachin Bansal
 Project Name: GetHub - a version tracking system written in C++
 
 ###Introduction::
-Designed and implemented a C++ memory-managed version tracking system simulating GitHub with dynamic Repo/File management and deep-copy Client functionality. The system supports adding, viewing, and removing repositories and their files on the heap. Implemented object-oriented design principles with proper destructors, deep copy logic, and modular class structure. A UML diagram was created to visualize the architecture.
+Designed and implemented a C++ memory-managed version tracking system simulating GitHub with dynamic Repo/File management and deep-copy Client functionality. The system supports adding, viewing, and removing repositories and their files on the heap. Implemented object-oriented design principles with proper destructors, deep copy logic, and modular class structure. 
+A UML diagram was created to visualize the architecture.
 
 
 ###Folder Structure:: 
@@ -43,7 +44,7 @@ total 154
 2. use make clean to clean up any related object files
 
 ### Below shows how "make" command can be executed
-student @ COMP2401 : 19:04:05
+
 # make
 g++ -c Repo.cc
 g++ -c RepoList.cc
@@ -63,7 +64,7 @@ g++ -o a3test test.o View.o TestControl.o Tester.o GetHub.o Repo.o File.o RepoLi
 
 
 ###Run "make clean" to clean all the binaries and clean the build environment
-student @ COMP2401 : 19:04:07
+
  # make clean
 
 
@@ -73,7 +74,6 @@ student @ COMP2401 : 19:04:07
 
 
 ### Following shows a3 and a3test files execution
-student @ COMP2401 : 19:07:10
  # ./a3
 Initializing GetHub...
 
@@ -93,7 +93,6 @@ Please make a selection:
 
 Enter your selection: 
 
-student @ COMP2401 : 19:07:49
 # ./a3test
 Please make a selection:
 
